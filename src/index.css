@@ -1,0 +1,21 @@
+.portImg {
+  height: 300px;
+  width: 300px;
+}
+
+.hoverImg:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  opacity: 0;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  margin: -100px 10px;
+  position: absolute;
+  background-color: black;
+  font-size: 24px;
+}

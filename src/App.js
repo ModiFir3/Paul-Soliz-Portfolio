@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import { Container, Row, Col } from "react-bootstrap";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         </Row>
       </Container>
       <About></About>
+      <Portfolio></Portfolio>
       <Footer></Footer>
     </div>
   );
