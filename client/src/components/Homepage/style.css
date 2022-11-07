@@ -1,0 +1,14 @@
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.nameCard {
+  display: inline;
+  text-align: center;
+}
+
+.projectCard {
+  display: inline;
+  text-align: center;
+}
