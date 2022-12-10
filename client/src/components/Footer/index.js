@@ -8,11 +8,19 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Footer() {
 
     return (
-        <div>
-            <GitHubIcon>
-            </GitHubIcon>
-            <LinkedInIcon>
-            </LinkedInIcon>
+        <div className='footerIcon'>
+            <GitHubIcon
+                sx={{
+                    width: 50,
+                    height: 50
+                }}
+            />
+            <LinkedInIcon
+                sx={{
+                    width: 50,
+                    height: 50
+                }}
+            />
         </div>
     )
 }

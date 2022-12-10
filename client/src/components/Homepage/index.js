@@ -1,5 +1,6 @@
 import React from 'react'
-import { Avatar, Grid } from '@mui/material'
+import { Avatar, Grid, Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material'
+import GitHubIcon from '@mui/icons-material/GitHub';
 import './style.css'
 
 function Homepage() {
@@ -25,10 +26,47 @@ function Homepage() {
                 <h3>Projects</h3>
                 <Grid container spacing={3}>
                     <Grid item xs={6}>
-                        hello
+                        <Card sx={{}}>
+                            <CardMedia
+                                component='img'
+                                alt=''
+                                image=''
+                            />
+
+                            <CardContent>
+                                <Typography gutterBottom variant='h5' component="div">
+                                    Project Name
+                                </Typography>
+                                <Typography variant='body1' color='text.secondary'>
+                                    this is the about section for the project
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <GitHubIcon></GitHubIcon>
+                            </CardActions>
+                        </Card>
                     </Grid>
+
                     <Grid item xs={6}>
-                        hello
+                        <Card sx={{}}>
+                            <CardMedia
+                                component='img'
+                                alt=''
+                                image=''
+                            />
+
+                            <CardContent>
+                                <Typography gutterBottom variant='h5' component="div">
+                                    Project Name
+                                </Typography>
+                                <Typography variant='body1' color='text.secondary'>
+                                    this is the about section for the project
+                                </Typography>
+                            </CardContent>
+                            <CardActions>
+                                <GitHubIcon></GitHubIcon>
+                            </CardActions>
+                        </Card>
                     </Grid>
                 </Grid>
             </div>
