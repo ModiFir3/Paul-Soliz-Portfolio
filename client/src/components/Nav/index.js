@@ -2,7 +2,7 @@ import React from 'react'
 import './style.css'
 import { Button } from '@mui/material'
 
-function Home() {
+function Nav() {
     return (
         <nav className='navBar'>
             <Button variant='text'>Homepage</Button>
@@ -13,4 +13,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Nav;

@@ -1,12 +1,12 @@
-import Header from './components/Header/index.js'
+import Nav from './components/Nav/index.js'
 import Footer from './components/Footer'
-import Homepage from './components/Homepage/index.js'
+import Homepage from './components/pages/Homepage'
 import './style.css'
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
+      <Nav></Nav>
       <Homepage></Homepage>
       <Footer></Footer>
     </div>

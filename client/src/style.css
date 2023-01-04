@@ -2,3 +2,32 @@ body {
   background-color: rgb(64, 70, 76);
   color: white;
 }
+
+.avatar {
+  display: flex;
+  justify-content: center;
+}
+
+.nameCard {
+  display: inline;
+  text-align: center;
+}
+
+.projectCard {
+  display: inline;
+  text-align: center;
+}
+
+.projectTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 900px) {
+}

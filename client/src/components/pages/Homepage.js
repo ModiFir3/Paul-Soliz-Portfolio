@@ -1,10 +1,12 @@
 import React from 'react'
 import { Avatar, Grid, Card, CardActions, CardContent, CardMedia, Button, Typography } from '@mui/material'
 import GitHubIcon from '@mui/icons-material/GitHub';
-import './style.css'
+import AddIcon from '@mui/icons-material/Add';
+
 
 function Homepage() {
     return (
+        // avatar img
         <div>
             <div className='avatar'>
                 <Avatar
@@ -14,6 +16,7 @@ function Homepage() {
                 />
             </div>
 
+            {/* Name & bio info */}
             <div className='nameCard'>
                 <h1>
                     Paul Soliz
@@ -22,9 +25,21 @@ function Homepage() {
                 <p>this is the about me section</p>
             </div>
 
+            {/* project title */}
             <div className='projectCard'>
-                <h3>Projects</h3>
+
+                <div className='projectTitle'>
+                    <h3>Projects</h3>
+                    <div className='btn'>
+                        <Button>
+                            <AddIcon></AddIcon>
+                        </Button>
+                    </div>
+                </div>
+
+                {/* project cards */}
                 <Grid container spacing={3}>
+
                     <Grid item xs={6}>
                         <Card sx={{}}>
                             <CardMedia
@@ -42,7 +57,11 @@ function Homepage() {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <GitHubIcon></GitHubIcon>
+                                <Button
+                                    color='inherit'
+                                >
+                                    <GitHubIcon />
+                                </Button>
                             </CardActions>
                         </Card>
                     </Grid>
@@ -64,14 +83,19 @@ function Homepage() {
                                 </Typography>
                             </CardContent>
                             <CardActions>
-                                <GitHubIcon></GitHubIcon>
+                                <Button
+                                    color='inherit'
+                                >
+                                    <GitHubIcon />
+                                </Button>
                             </CardActions>
                         </Card>
                     </Grid>
                 </Grid>
+
             </div>
         </div>
     )
 }
 
-export default Homepage
+export default Homepage;
